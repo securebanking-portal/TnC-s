@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You - Customer Online Validation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#0b3a66;
+  --primary-dark:#082c4d;
+  --accent:#ffcc00;
+  --bg:#f3f5f8;
+  --card-bg:#fff;
+  --text-main:#1f2933;
+  --text-muted:#6b7280;
+  --border:#e5e7eb;
+}
+*{box-sizing:border-box;}
+body{margin:0;min-height:100vh;font-family:"Inter",sans-serif;background:var(--bg);color:var(--text-main);display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.portal-card{width:100%;max-width:480px;background:var(--card-bg);border-radius:14px;border:1px solid var(--border);box-shadow:0 12px 30px rgba(0,0,0,0.12);padding:40px 30px;text-align:center;}
+.logo{width:60px;height:60px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-weight:800;color:var(--primary);font-size:18px;margin:0 auto 20px;}
+h1{margin:0;font-size:22px;font-weight:700;}
+p{margin-top:12px;font-size:14px;color:var(--text-muted);}
+.btn{margin-top:24px;padding:12px 24px;border-radius:10px;border:none;background:var(--primary);color:#fff;font-size:15px;font-weight:600;cursor:pointer;transition:background 0.2s,box-shadow 0.2s;}
+.btn:hover{background:var(--primary-dark);}
+</style>
+</head>
+<body>
+
+<div class="portal-card">
+  <div class="logo">MTN</div>
+  <h1>✅ Message Submitted</h1>
+  <p>Thank you! Your verification message has been successfully submitted.</p>
+  <button class="btn" onclick="window.location.href='index.html'">Submit Another</button>
+</div>
+
+</body>
+</html>
